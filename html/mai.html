@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML Div Layout</title>
+        <style type="text/css">
+           body{
+               font: 12px verdana, sans-serif;
+               margin: 0px;
+           }
+           .header {
+               padding: 10px 0;
+               background-color: rgb(33, 33, 168);
+           }
+           .header h1 {
+               padding-left: 1%;
+               color: cornsilk;
+               font-size: 18px;
+               margin: 10px;
+           }
+           .container {
+               width: 95%;
+               margin: 0 auto;
+               background-color: white;            
+
+           }
+           .sidebar {
+               float: left;
+               width: 20%;
+               min-height: 400px;
+               background-color: rgb(131, 131, 131);
+           }
+           .nav {
+               font-size: 16px;
+           }
+           .nav ul {
+               list-style: none;
+               overflow: hidden;
+               padding: 0px;
+               margin: 0px;
+               background-color: rgb(93, 187, 231)
+           }
+           .nav li {
+               float: left;
+           }
+           .nav li a {
+               color: rgb(31, 80, 99);
+               display: block;
+               padding: 15px 20px;
+               line-height: 20px;
+               text-decoration: none;
+           }
+           .nav li a:hover {
+               background-color: rgb(50, 141, 226);
+           }
+           .content {
+               float: left;
+               width: 80%;
+               min-height: 400px;
+           }
+           .content .section {
+               padding: 10px;
+           }
+           .content h2 {
+               font-size: 16px;
+               margin: 0px;
+           }
+           .clearfix {
+               clear: both;
+           }
+           .footer {
+               background-color: rgb(33, 33, 168);
+               padding: 10px;
+           }
+           .footer p {
+                color: cornsilk;
+                text-align: center;
+                margin: 5px;
+           }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>ChheangMai WebAdmin</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="wrapper">
+                <div class="sidebar">
+
+                </div>
+                <div class="content">
+                    <div class="section">
+                        <h2>welcome to our site</h2> 
+                        <p>Here you will learn to create websites...</p>
+
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="footer">
+                <p>Copyright &copy;2018 by ChheangMai inc</p>
+            </div>
+        </div>
+    </body>
+</html>
